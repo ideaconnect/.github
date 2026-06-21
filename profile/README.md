@@ -1,9 +1,3 @@
-<style>
-td, th {
-   border: none!important;   
-}
-</style>
-
 Hello!
 ======
 
@@ -26,18 +20,18 @@ Explore some of my software projects—you may already find them practical and r
 
 <table>
 <tr>
-<td colspan="2"><h3><a href="https://github.com/ideaconnect/symfony-nats-messenger">Symfony NATS Messenger [PHP]</a></h3></td>
+<td width="80" align="center" valign="middle" rowspan="2"><picture><source media="(prefers-color-scheme: dark)" srcset="media/symfony-white.svg"><img src="media/symfony.svg" alt="Symfony" width="56"></picture></td>
+<td><h3><a href="https://github.com/ideaconnect/symfony-nats-messenger">Symfony NATS Messenger [PHP]</a></h3></td>
 </tr>
 <tr>
-<td width="80" align="center" valign="midele"><picture><source media="(prefers-color-scheme: dark)" srcset="media/symfony-white.svg"><img src="media/symfony.svg" alt="Symfony" width="56"></picture></td>
 <td>
 
 A Symfony Messenger transport that bridges Symfony's message bus to NATS JetStream, handling message production/consumption and stream/consumer management. Configured via DSN in the form `nats-jetstream://[user:password@]host:port/stream/topic`, with a `nats-jetstream+tls://` variant for TLS.
 
 </td>
 </tr>
-<tr border="0">
-<td border="0" colspan="2">
+<tr>
+<td colspan="2">
 
 - Durable consumers with explicit ACK (optional double-ack), NAK-based redelivery handled either by NATS or by Symfony's own retry; tunable `ack_wait`, `max_deliver`, `backoff`, and `nak_delay`.
 - Batch consumption, delayed messages via `DelayStamp` (NATS ≥ 2.12), multi-subject streams, and per-stream configuration (retention, storage, replicas).
@@ -49,10 +43,10 @@ A Symfony Messenger transport that bridges Symfony's message bus to NATS JetStre
 
 <table>
 <tr>
-<td colspan="2"><h3><a href="https://github.com/ideaconnect/php-nats-jetstream-client">PHP NATS JetStream Client [PHP]</a></h3></td>
+<td width="80" align="center" valign="middle" rowspan="2"><img src="media/php.svg" alt="PHP" width="56"></td>
+<td><h3><a href="https://github.com/ideaconnect/php-nats-jetstream-client">PHP NATS JetStream Client [PHP]</a></h3></td>
 </tr>
 <tr>
-<td width="80" align="center" valign="midele"><img src="media/php.svg" alt="PHP" width="56"></td>
 <td>
 
 An asynchronous PHP client for NATS and JetStream, built on the AMPHP event loop for non-blocking I/O over the NATS wire protocol.
@@ -72,10 +66,10 @@ An asynchronous PHP client for NATS and JetStream, built on the AMPHP event loop
 
 <table>
 <tr>
-<td colspan="2"><h3><a href="https://github.com/ideaconnect/rabbit-going-nats">Rabbit-going-NATS [C#]</a></h3></td>
+<td width="80" align="center" valign="middle" rowspan="2"><img src="media/csharp.svg" alt="C#" width="56"></td>
+<td><h3><a href="https://github.com/ideaconnect/rabbit-going-nats">Rabbit-going-NATS [C#]</a></h3></td>
 </tr>
 <tr>
-<td width="80" align="center" valign="midele"><img src="media/csharp.svg" alt="C#" width="56"></td>
 <td>
 
 Tool which allows to passthrough messages fetched from RabbitMQ's queue to NATS PubSub.
@@ -93,10 +87,10 @@ Useful if you receive a data feed through RabbitMQ, but you need to redistribute
 
 <table>
 <tr>
-<td colspan="2"><h3><a href="https://github.com/ideaconnect/go-fyne-pretty-view">Go Fyne Pretty View [Go]</a></h3></td>
+<td width="80" align="center" valign="middle" rowspan="2"><img src="media/go.svg" alt="Go" width="56"></td>
+<td><h3><a href="https://github.com/ideaconnect/go-fyne-pretty-view">Go Fyne Pretty View [Go]</a></h3></td>
 </tr>
 <tr>
-<td width="80" align="center" valign="midele"><img src="media/go.svg" alt="Go" width="56"></td>
 <td>
 
 A memory-efficient, virtualized Fyne v2 widget for viewing structured data—JSON, JSONC, XML, HTML, and raw text—styled after Bruno's response viewer. Only viewport-visible rows exist as live canvas objects; the rest of the document is held in a compact struct-of-arrays model.
@@ -116,10 +110,10 @@ A memory-efficient, virtualized Fyne v2 widget for viewing structured data—JSO
 
 <table>
 <tr>
-<td colspan="2"><h3><a href="https://github.com/ideaconnect/helena">Helena [Go]</a></h3></td>
+<td width="80" align="center" valign="middle" rowspan="2"><img src="media/go.svg" alt="Go" width="56"></td>
+<td><h3><a href="https://github.com/ideaconnect/helena">Helena [Go]</a></h3></td>
 </tr>
 <tr>
-<td width="80" align="center" valign="midele"><img src="media/go.svg" alt="Go" width="56"></td>
 <td>
 
 A cross-platform native desktop API client (an alternative to Postman/Bruno) written in Go with the Fyne toolkit, distributed as a single self-contained binary with no Electron runtime.
@@ -139,10 +133,10 @@ A cross-platform native desktop API client (an alternative to Postman/Bruno) wri
 
 <table>
 <tr>
-<td colspan="2"><h3><a href="https://github.com/ideaconnect/idct-sftp-client">idct/sftp-client [PHP]</a></h3></td>
+<td width="80" align="center" valign="middle" rowspan="2"><img src="media/php.svg" alt="PHP" width="56"></td>
+<td><h3><a href="https://github.com/ideaconnect/idct-sftp-client">idct/sftp-client [PHP]</a></h3></td>
 </tr>
 <tr>
-<td width="80" align="center" valign="midele"><img src="media/php.svg" alt="PHP" width="56"></td>
 <td>
 
 A typed, object-oriented PHP wrapper around the procedural `ext-ssh2` extension for file transfer over SSH, SCP, and SFTP. Composer package `idct/sftp-client`; namespace `IDCT\Networking\Ssh`, main class `SftpClient`.
